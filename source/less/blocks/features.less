@@ -1,0 +1,55 @@
+.features {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  list-style: none;
+
+  color: #333333;
+
+  background-color: #eeeeee;
+}
+
+.features__item--detailed {
+  background-color: #81b3d2;
+  color: #ffffff; /*2-й вариант*/
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+/*.features__title--detailed {
+  color: #ffffff; 1-й вариант
+}
+
+/*.features__number--detailed {
+  color: #ffffff; 1-й вариант
+}*/
+
+.features__description {
+  margin: 0;
+  padding: 0;
+}
+
+/*.features__description--detailed {
+  color: #ffffff; 1-й вариант
+}*/
+
+
+/* Есть несколько способов переопределить цвет элементов:
+1) .features-title переопределить цвет на #000000. Навешать дополнительные модификаторы на .features__title, .features__number, .features__description и задать #ffffff. Проблема: засоряем разметку
+
+2) .features-title переопределить цвет на #000000. Модификатору .features__item--detailed задать #ffffff. Проблема: у .features__item, что в  блоках features__item--detailed, цвет #000000 вместо #ffffff за счет того, что у .features__title задан #000000. Поэтому задаем #ffffff через дополнительный модификатор .features__title--detailed.
+
+3) .features-title переопределить цвет на #000000. Модификатору .features__item--detailed задать #ffffff, а .features__item, что в  блоках features__item--detailed, задать #ffffff через каскад .features__item--detailed .features__item
+*/
