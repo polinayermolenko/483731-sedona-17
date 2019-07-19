@@ -1,15 +1,15 @@
 .photo {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   list-style: none;
 
-  color: #000000;
+  color: @black-color;
 
-  background-color: #ffffff;
+  background-color: @white-color;
 }
 
 .photo__title {
@@ -17,11 +17,13 @@
   padding: 0;
 
   font-size: 14px;
-
-  color: #000000;
 }
 
 .photo__author {
-  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: none;
+  color: @grey-color;
+}
+
+.photo__likes {
+  font-weight: 700;
 }
