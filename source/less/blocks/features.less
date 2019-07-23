@@ -1,4 +1,6 @@
 .features {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
@@ -10,6 +12,10 @@
   color: @grey-color;
 
   background-color: #eeeeee;
+}
+
+.features__item {
+  text-align: center;
 }
 
 .features__item--detailed {
@@ -24,6 +30,8 @@
 .features__title {
   margin: 0;
   padding: 0;
+  /*padding-top: 57px;
+  padding-bottom: 17px;*/
 
   font-size: 18px;
   line-height: 26px;
@@ -33,5 +41,79 @@
 
 .features__description {
   margin: 0;
+  margin-bottom: 42px;
   padding: 0;
+}
+
+.features__item:nth-child(3) .features__description {
+  margin: 0 auto;
+  width: 256px;
+}
+
+.features__item:nth-child(4) .features__description {
+  margin: 0 auto;
+  width: 256px;
+}
+
+.features__item:nth-child(5) .features__description {
+  margin: 0 auto;
+  width: 256px;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 256px;
+    min-height: 256px; /*временно*/
+  }
+
+  .features__item--detailed {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+
+  .features__wrapper {
+    width: 256px;
+    min-height: 256px; /*временно*/
+  }
+
+  /* временно*/
+  .features__city {
+    width: 512px;
+    background-color: lightgrey;
+  }  /*временно*/
+
+  /* временно*/
+  .features__bridge {
+    width: 512px;
+    background-color: lightgrey;
+  } /* временно*/
+}
+
+@media (min-width: @desktop-width) {
+  .features__item {
+    width: 400px;
+  }
+
+  .features__item--detailed {
+    width: 1200px;
+  }
+
+  .features__wrapper {
+    width: 400px;
+  }
+  /* временно*/
+  .features__city {
+    width: 800px;
+  }/* временно*/
+
+  /* временно*/
+  .features__bridge {
+    width: 800px;
+  } /* временно*/
 }

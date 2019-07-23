@@ -26,3 +26,25 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .subfeatures {
+    width: 768px;
+    display: flex;
+  }
+
+  .subfeatures__item {
+    width: 256px;
+    min-height: 330px; /*временно*/
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .subfeatures {
+    width: 1200px;
+  }
+
+  .subfeatures__item {
+    width: 400px;
+  }
+}
