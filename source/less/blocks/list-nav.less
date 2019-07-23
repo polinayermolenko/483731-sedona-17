@@ -1,4 +1,8 @@
 .list-nav {
+  min-height: 225px; /*временно*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /*временно*/
   margin: 0;
   padding: 0;
 
@@ -8,11 +12,22 @@
   text-transform: uppercase;
 
   list-style: none;
-
-  background-color: @blue-color;
 }
 
 .list-nav__item a {
   text-decoration: none;
   color: @white-color;
+}
+
+
+@media (min-width: @tablet-width) {
+  .list-nav {
+    min-height: 56px; /*временно*/
+    flex-direction: row;
+    justify-content: space-between; /*временно*/
+  }
+
+  .list-nav__item a {
+    color: @black-color;
+  }
 }
