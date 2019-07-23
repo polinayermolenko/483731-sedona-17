@@ -1,7 +1,10 @@
 .gallery-intro {
+  margin: 40px auto 0;
+  width: 305px;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
 
   color: @grey-color;
 }
@@ -12,4 +15,41 @@
   font-weight: 700;
 
   color: @black-color;
+}
+
+.gallery-intro__question {
+  margin-bottom: 30px;
+}
+
+.gallery-intro__span {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery-intro {
+    width: 475px;
+  }
+
+  .gallery-intro__title {
+    font-size: 30px;
+    margin-top: 77px;
+  }
+
+  .gallery-intro__question {
+    margin-bottom: 70px;
+  }
+
+  .gallery-intro__span {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery-intro__title {
+    margin-top: 112px;
+  }
+
+  .gallery-intro__question {
+    margin-bottom: 72px;
+  }
 }

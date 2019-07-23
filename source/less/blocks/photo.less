@@ -1,5 +1,6 @@
 .photo {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
 
   font-size: 14px;
@@ -10,6 +11,12 @@
   color: @black-color;
 
   background-color: @white-color;
+}
+
+.photo__item {
+  padding-top: 22px;
+  padding-left: 20px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .photo__title {
@@ -26,4 +33,48 @@
 
 .photo__likes {
   font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+    background-color: #f2f2f2;
+  }
+
+  .photo__item {
+    padding: 0;
+
+    border-top: none;
+  }
+
+  /*временно*/
+  .photo__item img {
+    width: 648px;
+    height: 400px;
+  }
+
+  /*временно*/
+  .photo__item:not(:first-child) img {
+    width: 324px;
+    height: 267px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    width: 1200px;
+  }
+
+  /*временно*/
+  .photo__item img {
+    width: 1200px;
+    height: 400px;
+  }
+
+  /*временно*/
+  .photo__item:not(:first-child) img {
+    width: 400px;
+  }
 }
