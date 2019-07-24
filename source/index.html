@@ -13,7 +13,7 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+            <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list list-nav">
             <li class="list-nav__item">
@@ -39,9 +39,11 @@
         <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="advantages__features features">
           <li class="features__item features__item--detailed">
-            <h2 class="features__title features__title--detailed">Настоящий городок</h2>
-            <span class="features__number features__number--detailed">— №1 —</span>
-            <p class="features__description features__description--detailed">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="features__wrapper">
+              <h2 class="features__title">Настоящий городок</h2>
+              <span class="features__number">— №1 —</span>
+              <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
             <img class="features__city" src="city.jpg" width="320" height="260"  alt="Город Седона">
             <ul class="advantages__subfeatures subfeatures">
               <li class="subfeatures__item subfeatures__item--house">
@@ -59,10 +61,12 @@
             </ul>
           </li>
           <li class="features__item features__item--detailed">
-            <h2 class="features__title features__title--detailed">Там есть Мост Дьявола</h2>
-            <span class="features__number features__number--detailed">— №2 —</span>
-            <p class="features__description features__description--detailed">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             <img class="features__bridge" src="bridge.jpg" width="320" height="260"  alt="Мост Дьявола">
+            <div class="features__wrapper">
+              <h2 class="features__title">Там есть Мост Дьявола</h2>
+              <span class="features__number">— №2 —</span>
+              <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
           </li>
           <li class="features__item">
             <h2 class="features__title">Небольшая площадь</h2>
@@ -86,31 +90,31 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-      <span class="footer__hashtag hashtag">#visitsedona</span>
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">
-            <span class="visually-hidden">Мы в Твиттере</span>
+        <span class="footer__hashtag hashtag">#visitsedona</span>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Мы в Твиттере</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Мы в Ютубе</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link">
+            <span class="visually-hidden">HTML Academy</span>
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">
-            <span class="visually-hidden">Мы в Фейсбуке</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden">Мы в Ютубе</span>
-          </a>
-        </li>
-      </ul>
-      <div class="footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

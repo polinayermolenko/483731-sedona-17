@@ -1,55 +1,119 @@
 .features {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   list-style: none;
 
-  color: #333333;
+  color: @grey-color;
 
   background-color: #eeeeee;
 }
 
+.features__item {
+  text-align: center;
+}
+
 .features__item--detailed {
-  background-color: #81b3d2;
-  color: #ffffff; /*2-й вариант*/
+  background-color: @blue-color;
+  color: @white-color;
+}
+
+.features__item--detailed .features__title {
+  color: @white-color;
 }
 
 .features__title {
   margin: 0;
   padding: 0;
+  /*padding-top: 57px;
+  padding-bottom: 17px;*/
 
   font-size: 18px;
   line-height: 26px;
 
-  color: #000000;
+  color: @black-color;
 }
-
-/*.features__title--detailed {
-  color: #ffffff; 1-й вариант
-}
-
-/*.features__number--detailed {
-  color: #ffffff; 1-й вариант
-}*/
 
 .features__description {
   margin: 0;
+  margin-bottom: 42px;
   padding: 0;
 }
 
-/*.features__description--detailed {
-  color: #ffffff; 1-й вариант
-}*/
+.features__item:nth-child(3) .features__description {
+  margin: 0 auto;
+  width: 256px;
+}
 
+.features__item:nth-child(4) .features__description {
+  margin: 0 auto;
+  width: 256px;
+}
 
-/* Есть несколько способов переопределить цвет элементов:
-1) .features-title переопределить цвет на #000000. Навешать дополнительные модификаторы на .features__title, .features__number, .features__description и задать #ffffff. Проблема: засоряем разметку
+.features__item:nth-child(5) .features__description {
+  margin: 0 auto;
+  width: 256px;
+}
 
-2) .features-title переопределить цвет на #000000. Модификатору .features__item--detailed задать #ffffff. Проблема: у .features__item, что в  блоках features__item--detailed, цвет #000000 вместо #ffffff за счет того, что у .features__title задан #000000. Поэтому задаем #ffffff через дополнительный модификатор .features__title--detailed.
+@media (min-width: @tablet-width) {
+  .features {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-3) .features-title переопределить цвет на #000000. Модификатору .features__item--detailed задать #ffffff, а .features__item, что в  блоках features__item--detailed, задать #ffffff через каскад .features__item--detailed .features__item
-*/
+  .features__item {
+    width: 256px;
+    min-height: 256px; /*временно*/
+  }
+
+  .features__item--detailed {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+
+  .features__wrapper {
+    width: 256px;
+    min-height: 256px; /*временно*/
+  }
+
+  /* временно*/
+  .features__city {
+    width: 512px;
+    background-color: lightgrey;
+  }  /*временно*/
+
+  /* временно*/
+  .features__bridge {
+    width: 512px;
+    background-color: lightgrey;
+  } /* временно*/
+}
+
+@media (min-width: @desktop-width) {
+  .features__item {
+    width: 400px;
+  }
+
+  .features__item--detailed {
+    width: 1200px;
+  }
+
+  .features__wrapper {
+    width: 400px;
+  }
+  /* временно*/
+  .features__city {
+    width: 800px;
+  }/* временно*/
+
+  /* временно*/
+  .features__bridge {
+    width: 800px;
+  } /* временно*/
+}

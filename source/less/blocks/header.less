@@ -1,0 +1,40 @@
+.header {
+  min-height: 665px; /*временно*/
+  display: flex;
+  flex-direction: column;
+  /*временно*/
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 281px;
+  background-size: 320px 389px;
+}
+
+.header--inner {
+  min-height: 437px;
+  background-size: 320px 160px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .header {
+    min-height: 574px; /*временно*/
+    background-position: 50% 56px;
+    background-size: 768px 518px;
+  }
+
+  .header--inner {
+    min-height: 346px;
+    background-size: 768px 290px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    background-size: 1200px 518px;
+  }
+
+  .header--inner {
+    min-height: 357px;
+    background-size: 1200px 302px;
+  }
+}

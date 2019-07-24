@@ -1,0 +1,27 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: @blue-color;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    min-height: 56px; /*временно*/
+    margin: 0;
+
+    background-color: @white-color;
+  }
+
+  .main-nav__wrapper {
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 1060px;
+  }
+}
