@@ -1,5 +1,35 @@
 .social {
+  width: 153px;
   display: flex;
+  justify-content: space-between;
+  margin: 37px auto 0;
+  padding: 0;
 
   list-style: none;
+
+  @media @tablet {
+    margin-top: 24px;
+  }
+
+  @media @desktop {
+    margin-top: 29px;
+  }
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: @blue-color;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

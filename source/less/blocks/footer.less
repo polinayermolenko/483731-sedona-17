@@ -1,44 +1,32 @@
 .footer {
-  min-height: 243px; /*временно*/
   width: 320px;
-  margin: 0 auto;
+  margin: 72px auto 0;
+  margin-top: 72px;
+
+  @media @tablet {
+    width: 768px;
+  }
+
+  @media @desktop {
+    width: 1200px;
+  }
 }
 
 .footer__wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  width: 153px;
+  margin: 0 auto;
   align-items: center;
-}
 
-.footer__hashtag {
-  margin-top: 38px;
-}
-
-.footer__social {
-  margin-top: 38px;
-}
-
-.footer__copyright {
-  margin-top: 45px;
-}
-
-@media (min-width: @tablet-width) {
-  .footer {
-    min-height: 120px; /*временно*/
-    width: auto;
-    margin: 0;
-  }
-
-  .footer__wrapper {
+  @media @tablet {
     width: 648px;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .footer__wrapper {
-    width: 1060px;
+  @media @desktop {
+    width: 960px;
   }
 }
