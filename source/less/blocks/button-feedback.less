@@ -1,0 +1,45 @@
+.button-feedback {
+  margin-top: 43px;
+  margin-right: 20px;
+  margin-left: 19px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 17px;
+  padding-left: 45px;
+
+
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: @white-color;
+
+  border: none;
+  background-color: @blue-color;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media @tablet {
+    margin: 0;
+    padding-left: 55px;
+    padding-right: 66px;
+  }
+
+  @media @desktop {
+    padding-left: 145px;
+    padding-right: 132px;
+  }
+}
