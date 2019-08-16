@@ -1,119 +1,213 @@
 .features {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 0;
   padding: 0;
 
-  font-size: 14px;
+  font-size: 13px;
   line-height: 21px;
   text-transform: uppercase;
   list-style: none;
+  text-align: center;
 
   color: @grey-color;
 
   background-color: #eeeeee;
+
+  @media @mobile {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -23px;
+      left: 50%;
+      width: 320px;
+      height: 37px;
+      margin-left: -160px;
+
+      background-image: url("../../img/bg-triangle.svg");
+    }
+  }
+
+  @media @tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+  }
 }
 
 .features__item {
-  text-align: center;
+  margin: 0 auto;
+
+  @media @tablet {
+    width: 256px;
+  }
+
+  @media @desktop {
+    width: 400px;
+  }
 }
 
 .features__item--detailed {
   background-color: @blue-color;
   color: @white-color;
-}
 
-.features__item--detailed .features__title {
-  color: @white-color;
-}
-
-.features__title {
-  margin: 0;
-  padding: 0;
-  /*padding-top: 57px;
-  padding-bottom: 17px;*/
-
-  font-size: 18px;
-  line-height: 26px;
-
-  color: @black-color;
-}
-
-.features__description {
-  margin: 0;
-  margin-bottom: 42px;
-  padding: 0;
-}
-
-.features__item:nth-child(3) .features__description {
-  margin: 0 auto;
-  width: 256px;
-}
-
-.features__item:nth-child(4) .features__description {
-  margin: 0 auto;
-  width: 256px;
-}
-
-.features__item:nth-child(5) .features__description {
-  margin: 0 auto;
-  width: 256px;
-}
-
-@media (min-width: @tablet-width) {
-  .features {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .features__item {
-    width: 256px;
-    min-height: 256px; /*временно*/
-  }
-
-  .features__item--detailed {
+  @media @tablet {
     display: flex;
     flex-wrap: wrap;
     width: 768px;
   }
 
-  .features__wrapper {
+  @media @desktop {
+    width: 1200px;
+  }
+}
+
+.features__wrapper {
+  @media @tablet {
     width: 256px;
-    min-height: 256px; /*временно*/
   }
 
+  @media @desktop {
+    width: 400px;
+  }
+}
+
+.features__item--detailed:nth-child(2) .features__wrapper {
+  @media @tablet {
+    margin-left: auto;/*временно*/
+    order: 1;
+  }
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: @black-color;
+
+  @media @tablet {
+    width: 157px;
+    margin: 0 auto;
+    padding-top: 45px;
+
+    font-size: 19px;
+  }
+}
+
+.features__item:first-child .features__title {
+  padding-top: 56px;
+
+  @media @tablet {
+    padding-top: 45px;
+  }
+
+  @media @desktop {
+    padding-top: 52px;
+  }
+}
+
+.features__item:nth-child(2) .features__title {
+  padding-top: 40px;
+
+  @media @tablet {
+    padding-top: 45px;
+  }
+
+  @media @desktop {
+    padding-top: 52px;
+  }
+}
+
+
+.features__item--detailed .features__title {
+  color: @white-color;
+}
+
+
+.features__number {
+  display: block;
+  padding-top: 8px;
+}
+
+.features__description {
+  width: 256px;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 30px;
+
+  @media @tablet {
+    width: 170px;
+    padding-top: 23px;
+    padding-bottom: 45px;
+  }
+
+  @media @desktop {
+    width: 310px;
+    padding-bottom: 65px;
+  }
+}
+
+.features__item:nth-child(4) .features__description {
+  @media @tablet {
+    width: 160px;
+  }
+
+  @media @desktop {
+    width: 290px;
+  }
+}
+
+.features__item:nth-child(5) .features__description {
+  padding-bottom: 26px;
+}
+
+.features__item--detailed .features__description {
+  width: 291px;
+  padding-top: 15px;
+  padding-bottom: 42px;
+
+  @media @tablet {
+    width: 167px;
+    padding-top: 25px;
+    padding-bottom: 44px;
+  }
+
+  @media @desktop {
+    width: 300px;
+    padding-bottom: 58px;
+  }
+}
+
+.features__item--detailed:nth-child(2) .features__description {
+  padding-bottom: 40px;
+
+  @media @tablet {
+    padding-bottom: 44px;
+  }
+
+  @media @desktop {
+    width: 230px;
+    padding-bottom: 58px;
+  }
+}
+
+@media @table {
   /* временно*/
   .features__city {
-    width: 512px;
+    width: 260px;
     background-color: lightgrey;
   }  /*временно*/
 
   /* временно*/
   .features__bridge {
-    width: 512px;
+    width: 260px;
     background-color: lightgrey;
-  } /* временно*/
-}
-
-@media (min-width: @desktop-width) {
-  .features__item {
-    width: 400px;
-  }
-
-  .features__item--detailed {
-    width: 1200px;
-  }
-
-  .features__wrapper {
-    width: 400px;
-  }
-  /* временно*/
-  .features__city {
-    width: 800px;
-  }/* временно*/
-
-  /* временно*/
-  .features__bridge {
-    width: 800px;
   } /* временно*/
 }

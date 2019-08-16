@@ -1,33 +1,107 @@
 .subfeatures {
   margin: 0;
   padding: 0;
+  padding-bottom: 37px;
 
-  font-size: 14px;
+  font-size: 13px;
   line-height: 21px;
   list-style: none;
+  text-align: left;
 
   color: #333333;
 
   background-color: #ffffff;
+
+  @media @tablet {
+    width: 768px;
+    display: flex;
+    padding-bottom: 62px;
+
+    text-align: center;
+  }
+
+  @media @desktop {
+    width: 1200px;
+    padding-bottom: 83px;
+  }
 }
+
+.subfeatures__item {
+  position: relative;
+  padding-left: 70px;
+
+  @media @tablet {
+    width: 256px;
+    /*min-height: 330px; временно*/
+    padding-left: 0;
+  }
+
+  @media @desktop {
+    width: 400px;
+  }
+}
+
+.subfeatures__item:nth-child(2) {
+  @media @tablet {
+    order: 1;
+  }
+}
+
+/*.subfeatures__item--house::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 75px;
+ height: 72px;
+ background-image: url("../../img/icon-house.svg");
+}*/
 
 .subfeatures__title {
   margin: 0;
-  padding: 0;
+  padding-top: 33px;
 
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: 700;
 
   color: #000000;
+
+  @media @tablet {
+    padding-top: 160px;
+
+    font-size: 18px;
+  }
 }
 
 .subfeatures__description {
+  width: 218px;
   margin: 0;
-  padding: 0;
+  padding-top: 12px;
+
+  @media @tablet {
+    width: 167px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  @media @desktop {
+    width: 295px;
+  }
 }
 
-@media (min-width: @tablet-width) {
+.subfeatures__item--souvenirs .subfeatures__description {
+  @media @desktop {
+    width: 230px;
+  }
+}
+
+.subfeatures__alignment {
+  @media @desktop {
+    display: block;
+  }
+}
+/*@media @tablet {
   .subfeatures {
     width: 768px;
     display: flex;
@@ -35,11 +109,11 @@
 
   .subfeatures__item {
     width: 256px;
-    min-height: 330px; /*временно*/
+    min-height: 330px; временно
   }
-}
+}*/
 
-@media (min-width: @desktop-width) {
+/*@media @desktop {
   .subfeatures {
     width: 1200px;
   }
@@ -47,4 +121,4 @@
   .subfeatures__item {
     width: 400px;
   }
-}
+}*/
