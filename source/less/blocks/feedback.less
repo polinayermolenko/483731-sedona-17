@@ -1,7 +1,8 @@
-.advantages {
+.feedback {
+  position: relative;
   width: 320px;
-  margin: 40px auto 0;
-  font-size: 14px;
+  margin: 38px auto 0;
+  font-size: 11px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
@@ -19,30 +20,32 @@
   }
 }
 
-.advantages__title {
-  width: 262px;
+.feedback__title {
+  width: 215px;
   margin: 0 auto;
 
-  font-size: 16px;
-  font-weight: 700;
-
   @media @tablet {
-    width: 500px;
-    margin: 50px auto 28px;
+    width: 355px;
+    margin-top: 75px;
 
-    font-size: 19px;
+    font-size: 28px;
+  }
+
+  @media @desktop {
+    margin-top: 112px;
   }
 }
 
-.advantages__intro {
-  width: 260px;
-  margin: 28px auto 0;
-
+.feedback__intro {
+  width: 285px;
+  margin: 26px auto 0;
   font-size: 13px;
+  line-height: 24px;
+
   color: @grey-color;
 
   @media @tablet {
-    width: auto;
-    margin-top: 29px;
+    width: 465px;
+    margin: 30px auto 0;
   }
 }

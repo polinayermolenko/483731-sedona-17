@@ -1,0 +1,44 @@
+.button-search {
+  width: 100%;
+  margin-top: 22px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  padding-left: 45px;
+
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: left;
+
+  color: @white-color;
+
+  border: none;
+  background-color: @blue-color;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media @tablet {
+    margin-top: 28px;
+    padding-left: 132px;
+  }
+
+  @media @desktop {
+    margin-top: 33px;
+  }
+}
+
+.button-search[disabled] {
+  background-color: #e5e5e5;
+}

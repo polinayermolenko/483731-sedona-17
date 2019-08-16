@@ -8,15 +8,15 @@
   <body>
     <header class="header">
       <a class="header__logo-link">
-        <img class="header__logo" src="logo.svg" width="102" height="83" alt="Логотип города Седона">
+        <img class="header__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип города Седона">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened">
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list list-nav">
-            <li class="list-nav__item">
+            <li class="list-nav__item list-nav__item--current">
               <a>Главная</a>
             </li>
             <li class="list-nav__item">
@@ -34,17 +34,17 @@
     </header>
     <main class="main">
       <section class="advantages">
-        <h1 class="advantages__title">Седона — небольшой городок в аризоне,
+        <h1 class="advantages__title">Седона – небольшой городок в аризоне,
         заслуживающий большего!</h1>
         <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="advantages__features features">
           <li class="features__item features__item--detailed">
             <div class="features__wrapper">
               <h2 class="features__title">Настоящий городок</h2>
-              <span class="features__number">— №1 —</span>
+              <span class="features__number">– №1 –</span>
               <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="features__city" src="city.jpg" width="320" height="260"  alt="Город Седона">
+            <img class="features__city" src="img/main-city-mobile@1x.jpg" width="320" height="260"  alt="Город Седона">
             <ul class="advantages__subfeatures subfeatures">
               <li class="subfeatures__item subfeatures__item--house">
                 <h3 class="subfeatures__title">Жилье</h3>
@@ -52,65 +52,77 @@
               </li>
               <li class="subfeatures__item subfeatures__item--souvenirs">
                 <h3 class="subfeatures__title">Сувениры</h3>
-                <p class="subfeatures__description">Не только китайского, но и местного производства!</p>
+                <p class="subfeatures__description"><span class="subfeatures__alignment">Не только китайского,</span> но и местного производства!</p>
               </li>
               <li class="subfeatures__item subfeatures__item--food">
                 <h3 class="subfeatures__title">Еда</h3>
-                <p class="subfeatures__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="subfeatures__description">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
               </li>
             </ul>
           </li>
           <li class="features__item features__item--detailed">
-            <img class="features__bridge" src="bridge.jpg" width="320" height="260"  alt="Мост Дьявола">
             <div class="features__wrapper">
               <h2 class="features__title">Там есть Мост Дьявола</h2>
-              <span class="features__number">— №2 —</span>
+              <span class="features__number">– №2 –</span>
               <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
+            <img class="features__bridge" src="img/main-bridge-mobile@1x.jpg" width="320" height="260"  alt="Мост Дьявола">
           </li>
           <li class="features__item">
             <h2 class="features__title">Небольшая площадь</h2>
-            <span class="features__number">— №3 —</span>
+            <span class="features__number">– №3 –</span>
             <p class="features__description">Все интересные места находятся очень близко</p>
           </li>
           <li class="features__item">
             <h2 class="features__title">Красивая дорога</h2>
-            <span class="features__number">— №4 —</span>
-            <p class="features__description">Ехать в седону из Лас-Вегаса
+            <span class="features__number">– №4 –</span>
+            <p class="features__description">Ехать в седону из&nbsp; Лас-Вегаса
             совсем не скучно!</p>
           </li>
           <li class="features__item">
             <h2 class="features__title">Мало туристов</h2>
-            <span class="features__number">— №5 —</span>
+            <span class="features__number">– №5 –</span>
             <p class="features__description">Большинство едет в Гранд Каньон
             и толпится там</p>
           </li>
         </ul>
+      </section>
+      <section class="booking">
+        <div class="booking__wrapper">
+          <h2 class="booking__question">Заинтересовались?</h2>
+          <p class="booking__instruction">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Cедоне</p>
+          <button class="button-search" type="submit">Найти гостиницу</button>
+        </div>
+        <div class="booking__map">
+          <a href="#" class="booking__map-link">
+            <img class="booking__map-image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта" >
+          </a>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
         <span class="footer__hashtag hashtag">#visitsedona</span>
         <ul class="footer__social social">
-          <li class="social__item">
+          <li>
             <a class="social__link social__link--twitter" href="#">
-              <span class="visually-hidden">Мы в Твиттере</span>
+              <span class="visually-hidden"><!--Мы в Твиттере--></span>
             </a>
           </li>
-          <li class="social__item">
+          <li>
             <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">Мы в Фейсбуке</span>
+              <span class="visually-hidden"><!--Мы в Фейсбуке--></span>
             </a>
           </li>
-          <li class="social__item">
+          <li>
             <a class="social__link social__link--youtube" href="#">
-              <span class="visually-hidden">Мы в Ютубе</span>
+              <span class="visually-hidden"><!--Мы в Ютубе--></span>
             </a>
           </li>
         </ul>
         <div class="footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>

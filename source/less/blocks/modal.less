@@ -1,0 +1,91 @@
+.modal {
+  position: fixed;
+  top: 125px;
+  left: 50%;
+  margin-left: -160px;
+  width: 320px;
+  padding-top: 40px;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: @black-color;
+
+  background-color: @white-color;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @media @tablet {
+    padding-top: 55px;
+    font-size: 18px;
+  }
+}
+
+.modal--success {
+  display: none; /*временно*/
+
+  @media @tablet {
+    width: 640px;
+    margin-left: -320px;
+  }
+}
+
+.modal--failure {
+  display: none; /*временно*/
+
+  @media @tablet {
+    width: 400px;
+    margin-left: -200px;
+  }
+}
+
+.modal__wrapper {
+  width: 230px;
+  margin: 0 auto;
+}
+
+.modal--success .modal__wrapper {
+  @media @tablet {
+    width: 431px;
+  }
+}
+
+.modal--failure .modal__wrapper {
+  @media @tablet {
+    width: 292px;
+  }
+}
+
+.modal__title {
+  margin: 0;
+
+  @media @tablet {
+    line-height: 40px;
+  }
+}
+
+.modal__notification {
+  margin: 0;
+  margin-top: 26px;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: @grey-color;
+
+  @media @tablet {
+    margin-top: 26px;
+  }
+}
+
+.modal__button-wrapper {
+  margin-top: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+
+  @media @tablet {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+}
