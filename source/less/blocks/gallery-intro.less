@@ -1,55 +1,48 @@
 .gallery-intro {
-  margin: 40px auto 0;
-  width: 305px;
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 28px;
+  width: 320px;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
 
   color: @grey-color;
+
+  background-color: @white-color;
+
+  @media @tablet {
+    width: 648px;
+    padding-top: 75px;
+    padding-bottom: 70px;
+  }
+
+  @media @desktop {
+    width: 1200px;
+    padding-top: 111px;
+    padding-bottom: 72px;
+  }
 }
 
 .gallery-intro__title {
+  margin: 0;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 700;
 
   color: @black-color;
+
+  @media @tablet {
+    font-size: 30px;
+  }
 }
 
 .gallery-intro__question {
-  margin-bottom: 30px;
-}
+  width: 270px;
+  margin: 26px auto 0;
 
-.gallery-intro__span {
-  display: block;
-}
-
-@media @tablet {
-  .gallery-intro {
-    width: 475px;
-  }
-
-  .gallery-intro__title {
-    font-size: 30px;
-    margin-top: 77px;
-  }
-
-  .gallery-intro__question {
-    margin-bottom: 70px;
-  }
-
-  .gallery-intro__span {
-    display: inline;
-  }
-}
-
-@media @desktop {
-  .gallery-intro__title {
-    margin-top: 112px;
-  }
-
-  .gallery-intro__question {
-    margin-bottom: 72px;
+  @media @tablet {
+    width: 430px;
+    margin-top: 30px;
   }
 }
