@@ -34,6 +34,16 @@
   }
 }
 
+.main-nav--nojs .list-nav__item {
+    display: block;
+  }
+
+.main-nav--closed .list-nav__item {
+  @media @mobile {
+    display: none;
+  }
+}
+
 .list-nav__item a {
   display: block;
   padding-top: 8px;
