@@ -1,4 +1,5 @@
 .social {
+  position: relative;
   width: 153px;
   display: flex;
   justify-content: space-between;
@@ -8,11 +9,7 @@
   list-style: none;
 
   @media @tablet {
-    margin-top: 24px;
-  }
-
-  @media @desktop {
-    margin-top: 29px;
+    margin: 0;
   }
 }
 
@@ -31,5 +28,51 @@
   &:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.social__twitter {
+  position: absolute;
+  top: 16px;
+  left: 15px;
+
+  width: 18px;
+  height: 15px;
+
+  fill: @white-color;
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.social__facebook {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+
+  width: 9px;
+  height: 19px;
+
+  fill: @white-color;
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+
+.social__youtube {
+  position: absolute;
+  top: 17px;
+  left: 12px;
+
+  width: 20px;
+  height: 14px;
+
+  fill: @white-color;
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
   }
 }

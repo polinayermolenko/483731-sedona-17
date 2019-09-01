@@ -3,18 +3,19 @@
   padding: 0;
   padding-bottom: 37px;
 
-  font-size: 13px;
+  font-size: 14px;
   line-height: 21px;
   list-style: none;
   text-align: left;
 
-  color: #333333;
+  color: @grey-color;
 
-  background-color: #ffffff;
+  background-color: @white-color;
 
   @media @tablet {
     width: 768px;
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 62px;
 
     text-align: center;
@@ -32,7 +33,6 @@
 
   @media @tablet {
     width: 256px;
-    /*min-height: 330px; временно*/
     padding-left: 0;
   }
 
@@ -41,36 +41,94 @@
   }
 }
 
-.subfeatures__item:nth-child(2) {
+.subfeatures__item--gift {
   @media @tablet {
     order: 1;
   }
 }
 
-/*.subfeatures__item--house::before {
- content: "";
- position: absolute;
- top: 0;
- left: 0;
- width: 75px;
- height: 72px;
- background-image: url("../../img/icon-house.svg");
-}*/
+.subfeatures__house {
+  position: absolute;
+  top: 24px;
+  left: 20px;
+
+  width: 39px;
+  height: 37px;
+
+  fill: @blue-color;
+
+  @media @tablet {
+    top: 60px;
+    left: 90px;
+
+    width: 75px;
+    height: 72px;
+  }
+
+  @media @desktop {
+    left: 163px;
+  }
+}
+
+.subfeatures__gift {
+  position: absolute;
+  top: 21px;
+  left: 24px;
+
+  width: 32px;
+  height: 38px;
+
+  fill: @blue-color;
+
+  @media @tablet {
+    top: 57px;
+    left: 94px;
+
+    width: 64px;
+    height: 75px;
+  }
+
+  @media @desktop {
+    left: 167px;
+  }
+}
+
+.subfeatures__burger {
+  position: absolute;
+  top: 25px;
+  left: 19px;
+
+  width: 40px;
+  height: 35px;
+
+  fill: @blue-color;
+
+  @media @tablet {
+    top: 62px;
+    left: 88px;
+
+    width: 77px;
+    height: 68px;
+  }
+
+  @media @desktop {
+    left: 160px;
+  }
+}
 
 .subfeatures__title {
   margin: 0;
   padding-top: 33px;
 
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
-  font-weight: 700;
 
-  color: #000000;
+  color: @black-color;
 
   @media @tablet {
     padding-top: 160px;
 
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 
@@ -80,7 +138,7 @@
   padding-top: 12px;
 
   @media @tablet {
-    width: 167px;
+    width: 166px;
     margin: 0 auto;
     padding-top: 20px;
   }
@@ -90,7 +148,7 @@
   }
 }
 
-.subfeatures__item--souvenirs .subfeatures__description {
+.subfeatures__item--gift .subfeatures__description {
   @media @desktop {
     width: 230px;
   }
@@ -101,24 +159,3 @@
     display: block;
   }
 }
-/*@media @tablet {
-  .subfeatures {
-    width: 768px;
-    display: flex;
-  }
-
-  .subfeatures__item {
-    width: 256px;
-    min-height: 330px; временно
-  }
-}*/
-
-/*@media @desktop {
-  .subfeatures {
-    width: 1200px;
-  }
-
-  .subfeatures__item {
-    width: 400px;
-  }
-}*/

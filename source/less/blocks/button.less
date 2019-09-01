@@ -3,7 +3,7 @@
   padding-bottom: 15px;
 
   font-family: inherit;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
@@ -16,8 +16,37 @@
   background-color: @blue-color;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button[disabled] {
+  background-color: #e5e5e5;
+}
+
+.button--search {
+  display: block;
+  margin-top: 34px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-right: 47px;
+  padding-left: 46px;
+
+  text-decoration: none;
+
   @media @tablet {
-    font-size: 19px;
+    margin-top: 41px;
+  }
+
+  @media @desktop {
+    margin-top: 46px;
   }
 }
 
@@ -42,5 +71,26 @@
     margin-bottom: 49px;
     padding-right: 123px;
     padding-left: 122px;
+  }
+}
+
+.button--feedback {
+  margin-top: 44px;
+  margin-left: 20px;
+  padding-right: 47px;
+  padding-bottom: 17px;
+  padding-left: 48px;
+
+  @media @tablet {
+    margin-top: 0;
+    margin-left: 0;
+    padding-top: 14px;
+    padding-left: 64px;
+    padding-right: 76px;
+  }
+
+  @media @desktop {
+    padding-left: 148px;
+    padding-right: 148px;
   }
 }

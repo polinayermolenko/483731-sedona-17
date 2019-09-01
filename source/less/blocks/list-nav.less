@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 
-  font-size: 16px;
+  font-size: 18px;
   line-height: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -15,7 +15,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    font-size: 13px;
+    font-size: 14px;
     line-height: 26px;
   }
 }
@@ -26,34 +26,21 @@
 
   @media @tablet {
     border: none;
+    width: 20%;
 
-    &:first-child {
-      margin-right: 72px;
-      margin-left: 22px;
-    }
-
-    &:nth-child(2) {
-      margin-right: 203px;
-    }
-
-    &:nth-child(3) {
-      margin-right: 41px;
+    &--margin {
+      margin-left: 20%;
     }
   }
+}
 
-  @media @desktop {
-    &:first-child {
-      margin-right: 155px;
-      margin-left: 19px;
-    }
+.main-nav--nojs .list-nav__item {
+  display: block;
+}
 
-    &:nth-child(2) {
-      margin-right: 377px;
-    }
-
-    &:nth-child(3) {
-      margin-right: 127px;
-    }
+.main-nav--closed .list-nav__item {
+  @media @mobile {
+    display: none;
   }
 }
 
